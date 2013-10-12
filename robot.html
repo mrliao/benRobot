@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<style>
+		body{text-align:center;}
+		#content{width:800px;height:800px;background:green;border:1px solid #ccc;border-radius:5px;margin:0 auto;}
+	</style>
+	</head>
+	<body>
+            
+	<div id="content"></div>
+        <div style="position:absolute;display:block;top:100px;left:0px;cursor:move" onmousedown="rm(event)" onmouseover="getMess(event);" onmouseout="messOver()" id="robotImg">
+            <div id="me" style="width:100px;height:30px;background:gray;opacity: 0">111</div>
+            <img src="img/man.png" ondragstart="return false;"/>
+        </div>
+        
+        <script id="robotJS"></script>
+	<script>
+		document.getElementById("robotJS").src="robot.js?v="+Math.random();
+		
+		//第二步实现鼠标悬停时所出现的随机语句
+		
+		//第三步就是将图片实现按固定时间进行随机时间------------即完成了机器人推广
+	</script>
+	</body>
